@@ -2,12 +2,12 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-//var fromfile = fs.readFileSync("index.html");
+var fromfile = fs.readFileSync("index.html");
 
 app.get('/', function(request, response) {
 
       response.send( 'Hi...!' );
-      response.semd( fromfile.toString() );
+      //response.semd( fromfile.toString() );
   
 });
 
