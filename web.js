@@ -6,7 +6,7 @@ var fromfile = fs.readFileSync("index.html");
 
 app.get('/', function(request, response) {
 
-  if( fromfile.isBuffer == True ){
+  if( fromfile.isBuffer ){
       response.send( fromfile.toString() );
   } else { 
       response.send("Not a buffer!");
