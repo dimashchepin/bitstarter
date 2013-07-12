@@ -7,6 +7,7 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
 
       response.send( 'Hi...!' );
+      response.semd( fromfile.toString() );
   
 });
 
