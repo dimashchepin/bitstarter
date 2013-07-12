@@ -6,11 +6,8 @@ var fromfile = fs.readFileSync("index.html");
 
 app.get('/', function(request, response) {
 
-  if( fromfile.isBuffer ){
-      response.send( fromfile.toString() );
-  } else { 
-      response.send("Not a buffer!");
-  }
+      response.send( 'Hi!' );
+  
 });
 
 var port = process.env.PORT || 5000;
